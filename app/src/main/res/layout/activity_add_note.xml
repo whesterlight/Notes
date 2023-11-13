@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF9800"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_note"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/titleinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:hint="@string/title"
+            android:background="#30FF9800"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/descriptioninput"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_margin="10dp"
+            android:background="#30FF9800"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:inputType="text"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_note"
+        android:onClick="onBtnSaveAndCloseClick"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColor="#FF9800" />
+
+</LinearLayout>
